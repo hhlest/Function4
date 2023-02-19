@@ -16,11 +16,11 @@ public class Main {
         String[] s1Array = s1.split(" ");
         String[] s2Array = s2.split(" ");
 
-        for (String s : s1Array) {
-            for (String value : s2Array) {
-                if (s.equals(value) && !checkDuplication.containsKey(s)) {
-                    checkDuplication.put(s, s);
-                    resultString += value + " ";
+        for (String str1 : s1Array) {
+            for (String str2 : s2Array) {
+                if (str1.equals(str2) && !checkDuplication.containsKey(str1)) {
+                    checkDuplication.put(str1, str1);
+                    resultString += str2 + " ";
                 }
             }
         }
